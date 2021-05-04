@@ -11,6 +11,8 @@
 		111DCF372641A0BD00C896D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111DCF362641A0BD00C896D1 /* ContentView.swift */; };
 		111DCF392641A0BF00C896D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111DCF382641A0BF00C896D1 /* Assets.xcassets */; };
 		111DCF3C2641A0BF00C896D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111DCF3B2641A0BF00C896D1 /* Preview Assets.xcassets */; };
+		111DCF452641A11700C896D1 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111DCF442641A11700C896D1 /* Posts.swift */; };
+		111DCF482641A9D200C896D1 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111DCF472641A9D200C896D1 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		111DCF382641A0BF00C896D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111DCF3B2641A0BF00C896D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		111DCF3D2641A0BF00C896D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		111DCF442641A11700C896D1 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		111DCF472641A9D200C896D1 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		111DCF332641A0BD00C896D1 /* JsonDataUrlSession */ = {
 			isa = PBXGroup;
 			children = (
+				111DCF462641A9C300C896D1 /* ViewModels */,
+				111DCF432641A0E200C896D1 /* Models */,
 				111DCF342641A0BD00C896D1 /* JsonDataUrlSessionApp.swift */,
 				111DCF362641A0BD00C896D1 /* ContentView.swift */,
 				111DCF382641A0BF00C896D1 /* Assets.xcassets */,
@@ -67,6 +73,22 @@
 				111DCF3B2641A0BF00C896D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		111DCF432641A0E200C896D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				111DCF442641A11700C896D1 /* Posts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		111DCF462641A9C300C896D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				111DCF472641A9D200C896D1 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111DCF482641A9D200C896D1 /* ContentViewModel.swift in Sources */,
 				111DCF372641A0BD00C896D1 /* ContentView.swift in Sources */,
+				111DCF452641A11700C896D1 /* Posts.swift in Sources */,
 				111DCF352641A0BD00C896D1 /* JsonDataUrlSessionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

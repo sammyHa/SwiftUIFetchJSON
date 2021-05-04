@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var VM = ContentViewModel()
+ 
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            List(VM.posts, id: \.id) { post in
+                VStack(alignment:.leading) {
+                    HStack {
+                        Text("\(post.id)")
+                            .font(.title)
+                        
+                        Text(post.title)
+                            .padding()
+                            .font(.title)
+                            .lineLimit(2)
+                    }
+                    
+                     Text(post.body)
+                         .font(.subheadline)
+                }
+               
+            }
+        }
+        .onAppear(){
+            VM.fetchData()
+        }
+       
     }
 }
 
